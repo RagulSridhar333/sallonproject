@@ -1,0 +1,530 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.banner {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(nathon-oski-EW_rqoSdDes-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.section1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.section1 .menu ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    margin: 25px 10px;
+
+}
+
+.section1 .menu ul li {
+    float: left;
+    list-style: none;
+}
+
+.section1 .tittle h1 {
+    color: #fff;
+    margin-left: 20px;
+    padding-top: 25px;
+    font-weight: bold;
+    font-size: 40px;
+
+}
+
+.section1 .menu ul li a:hover {
+    color: #009688;
+
+}
+
+.section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 200px;
+}
+
+.section2 .banner-text {
+    font-size: 40px;
+    color: #fff;
+}
+
+.section2 .banner-text h1 {
+    text-align: center;
+}
+
+.banner-btn {
+    margin-top: 30px;
+}
+
+.banner-btn a {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 20px 55px;
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.banner-btn a span {
+    background-color: #fff;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.banner-btn a:hover span {
+    width: 100%;
+}
+
+.banner-btn a:hover {
+    color: #000;
+}
+
+/*End*/
+
+/*section-2*/
+
+.about {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.sec1,
+.sec2 {
+    height: 90%;
+    width: 80%;
+    margin: 20px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.sec1 img {
+    height: 90%;
+    width: 80%;
+    padding-left: 150px;
+    position: absolute;
+    margin-top: 60px;
+}
+
+.sec2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.sec2 h2 {
+    text-align: center;
+}
+
+.sec2 h4 {
+    margin: 25px auto;
+    font-size: 25px;
+    color: #009688;
+}
+
+.sec2 p {
+    text-align: justify;
+    font-size: 20px;
+    padding-right: 30px;
+}
+
+.sec2 {
+    position: relative;
+}
+
+.sec2 h2 {
+    position: absolute;
+    top: 0;
+    margin: 10%;
+    margin-left: 160px;
+}
+
+/*For Hair Cut and price section */
+.box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.inner {
+    height: 600px;
+    width: 400px;
+    margin: 25px;
+    margin-top: 50px;
+    position: relative;
+    border-radius: 7px;
+    overflow: hidden;
+
+}
+
+.inner img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #009688);
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+.inner:hover .overlay {
+    opacity: 1;
+
+}
+
+.content {
+    width: 80%;
+    position: absolute;
+    bottom: -10%;
+    left: 13%;
+    transition: 1s ease-in-out;
+    transform: translateY(50%);
+
+}
+
+hr {
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+
+.content h1 {
+    color: #fff;
+    text-align: center;
+
+}
+
+.content h4 {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.content p {
+    color: #fff;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.inner:hover .content {
+    bottom: 40%;
+    opacity: 1;
+    transform: translateY(-50%);
+}
+
+h2 {
+    text-align: center;
+    padding-top: 35px;
+    font-size: 50px;
+}
+
+span {
+    color: #009688;
+}
+
+/*End */
+
+/*login form*/
+.login {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.loginform {
+    background-color: #009688;
+    color: #fff;
+    height: 700px;
+    width: 700px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    margin-bottom: 35px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+}
+
+.login h2 {
+    margin-bottom: 17px;
+
+}
+
+.loginform input {
+    margin: 25px 80px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 3px solid white;
+    padding: 8px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.loginform label {
+    padding-left: 80px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.loginform button {
+    height: 50px;
+    width: 300px;
+    margin: 30px;
+    align-items: center;
+    margin-left: 165px;
+    font-size: 20px;
+    border-radius: 7px;
+}
+
+.loginform a {
+    text-decoration: none;
+    padding-left: 80px;
+    font-size: 20px;
+    color: #fff;
+
+}
+
+.loginform p {
+    font-size: 20px;
+    padding-left: 80px;
+    margin: 20px 0px;
+}
+
+.loginform #create {
+    padding-left: 0;
+}
+
+/*Cusromer review section*/
+.review {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+.reviewppl {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ppl {
+    height: 400px;
+    width: 400px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    display: flex;
+
+
+}
+
+.review h4 {
+    margin-top: 17px;
+    text-align: center;
+}
+
+.review .reviewppl {
+    margin-top: 75px;
+    margin-bottom: 75px;
+    padding: 7px;
+}
+
+.review button {
+    height: 70px;
+    width: 500px;
+    font-size: 20px;
+    margin-left: 35%;
+    border-radius: 7px;
+}
+
+.ppl.one ,.ppl.two{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.ppl img {
+    height: 95px;
+    width: 95px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-top: 5px;
+
+}
+
+.ppl .img1
+    {
+    display: flex;
+   flex-direction: column;
+
+
+}
+
+.ppl .img1 .x{
+
+    display: flex;
+    flex-direction: row;
+}
+.ppl .img1 .x h3{
+    margin-top: 25px;
+}
+
+
+
+.ppl h4  {
+    margin-top: 2px;
+    text-align: left;
+    color: gray;
+    padding-left: 8px;
+}
+
+.ppl .reviewtext{
+    padding: 5px;
+    text-align: justify;
+}
+.ppl .rating{
+padding: 10px;
+}
+
+/*Footer*/
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    background-color: #009688;
+    color: #fff;
+    width: 100%;
+    height: 300px;
+
+}
+
+.box3 {
+    margin-top: 50px;
+}
+
+.box3 a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.box3 a:hover {
+    color: #56486a;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 5px;
+}
+
+.box2 img {
+    background: transparent;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    row-gap: 10px;
+}
+
+.box1 .email {
+    height: 60x;
+    width: 100%;
+    outline: none;
+    border-radius: 5px solid #fff;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    padding-right: 5px;
+    padding-bottom: 5px;
+
+
+}
+
+.box1 h3 {
+    padding-bottom: 40px;
+}
+
+.box1 h4 {
+    padding-top: 15px;
+}
+
+.box2 .font {
+    display: flex;
+    justify-content: center;
+    column-gap: 7px;
+
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-instagram {
+    color: #009688;
+    background-color: #d2cccc;
+    text-decoration: none;
+    height: 25px;
+    width: 25px;
+    padding-top: 5px;
+    border-radius: 5px;
+    margin: 15px 10px;
+
+}
+
+/*Footer End*/
